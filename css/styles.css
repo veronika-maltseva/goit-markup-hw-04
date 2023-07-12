@@ -191,18 +191,20 @@ img {
 }
 
 .hero-container {
-    background-image: url(../images/bg-hero.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+    url(../images/bg-hero.jpg);
     background-repeat: no-repeat;
-    min-width: 1440px;
-    min-height: 600px;
     background-size: cover;
+    background-position: center;
+    width: 1440px;
+    height: 600px;
     flex-shrink: 0;
     padding: 188px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-section {
-    margin-left: auto;
-    margin-right: auto;
     background-color: var(--logo-up-nav-cl);
     color: var(--main-background-cl);
 }
@@ -260,6 +262,18 @@ img {
 
 .features-li {
     width: calc((100% - 72px) / 4);
+}
+
+.features-icons {
+    display: block;
+    border-radius: 4px;
+    background-color: var(--logo-down-cl);
+    padding: 24px 100px;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+    gap: 24px;
 }
 
 .general-section-title {
@@ -354,6 +368,22 @@ img {
 
 .team-text {
     text-align: center;
+}
+
+.team-icons {
+    gap: 24px;
+}
+
+.net-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 50%;
+    background-color: var(--main-logo-cl);
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
 }
 
 .portfolio-section {
