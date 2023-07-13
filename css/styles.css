@@ -684,6 +684,7 @@ img {
     height: 24px;
     border-color: var(--logo-up-nav-cl);
     background-color: var(--border-clr);
+    bottom: none;
 }
 
 .modal-icon {
