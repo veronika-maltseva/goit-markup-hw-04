@@ -190,6 +190,15 @@ img {
 
 }
 
+.studio-page::after {
+    content: '';
+    border-radius: 2px;
+    background: var(--ocean, #404BBF);
+    width: 66px;
+    height: 4px;
+    position: absolute;
+}
+
 .hero-container {
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
     url(../images/bg-hero.jpg);
@@ -432,6 +441,12 @@ img {
     width: calc((100% - 48px) / 3);
 }
 
+.card-li:hover,
+.card-li:focus {
+    border: 1px solid var(--cloud, #F4F4FD);
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .container-portfolio {
     padding: 32px 16px;
     border: 1px solid var(--border-clr);
