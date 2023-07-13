@@ -116,6 +116,23 @@ img {
     margin-right: 332px;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--active-link-cl);
+}
+
+.nav-link.active::after {
+    content: '';
+    border-radius: 2px;
+    background-color: var(--ocean, #404BBF);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
 .header-address {
     display: flex;
     align-items: center;
@@ -152,6 +169,7 @@ img {
 }
 
 .nav-link {
+    position: relative;
     padding: 24px 0;
     font-weight: 500;
     line-height: 1.5;
@@ -188,15 +206,6 @@ img {
 
 .header-list {
 
-}
-
-.studio-page::after {
-    content: '';
-    border-radius: 2px;
-    background: var(--ocean, #404BBF);
-    width: 66px;
-    height: 4px;
-    position: absolute;
 }
 
 .hero-container {
