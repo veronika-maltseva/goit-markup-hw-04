@@ -657,12 +657,23 @@ img {
 
 .backdrop {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
     width: 100%;
     height: 100%;
 
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+
     background-color: #2E2F42, rgba(46, 47, 66, 0.40);
+}
+
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translateX(-50%), translateY(-70%);
 }
 
 .modal {
@@ -670,21 +681,24 @@ img {
     width: 408px;
     height: 584px;
     transform: translateX(-50%), translateX(-50%);
+
     border-radius: 4px;
     background-color:#FCFCFC;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: opasity 250ms;
 }
 
 .modal-btn {
     position: absolute;
     top: 24px;
     right: 24px;
+
     border-radius: 50%;
     width: 24px;
     height: 24px;
     border-color: var(--logo-up-nav-cl);
     background-color: var(--border-clr);
-    bottom: none;
+    border: none;
 }
 
 .modal-icon {
