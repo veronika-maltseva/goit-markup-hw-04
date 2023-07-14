@@ -673,11 +673,13 @@ img {
 
 .backdrop.is-hidden .modal {
     opacity: 0;
-    transform: translateX(-50%), translateY(-70%);
+    transform: translateX(-50%), translateY(-50%);
 }
 
 .modal {
     position: absolute;
+    top: 80;
+    left: 516px;
     width: 408px;
     height: 584px;
     transform: translateX(-50%), translateX(-50%);
@@ -689,6 +691,7 @@ img {
 }
 
 .modal-btn {
+    display: flex;
     position: absolute;
     top: 24px;
     right: 24px;
@@ -696,11 +699,18 @@ img {
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    border-color: var(--logo-up-nav-cl);
     background-color: var(--border-clr);
     border: none;
 }
 
 .modal-icon {
-
+    position: absolute;
+    top: 8px;
+    left: 8px;
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--active-link-cl);
+}
+
