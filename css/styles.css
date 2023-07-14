@@ -404,7 +404,10 @@ img {
     text-align: center;
 }
 
-.team-icon {}
+.team-icon {
+    width: 40px;
+    height: 40px;
+}
 
 .team-icon-svg {
     fill: var(--logo-down-cl);
@@ -423,8 +426,8 @@ img {
     justify-content: center;
     border-radius: 50%;
     background-color: var(--main-logo-cl);
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     margin-top: 8px;
     gap: 24px;
 
@@ -488,6 +491,7 @@ img {
 
 .customer-icon-box:hover .customers-icons {
     fill: var(--active-link-cl);
+    color: var(--active-link-cl);
 }
 
 .portfolio-section {
@@ -730,6 +734,7 @@ img {
 .is-hidden {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
