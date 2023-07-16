@@ -553,7 +553,6 @@ img {
 }
 
 .portfolio-btn-li {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn {
@@ -563,8 +562,10 @@ img {
 
     color: var(--main-logo-cl);
     background-color: var(--logo-down-cl);
-
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -698,14 +699,15 @@ img {
     transition: transform 250ms ease-in-out;
 }
 
-.box:hover .overlay {
+.box:hover .overlay, 
+.box:focus .overlay {
     transform: translateY(0);
 }
 
 .overlay-text {
     position: absolute;
     top: 0;
-    padding: 40px 32px 164px 32px ;
+    padding: 40px 32px;
     color: var(--logo-down-cl); 
     align-items: center;
     font-size: 16px;
@@ -779,8 +781,6 @@ img {
 
 .modal-icon {
     position: absolute;
-    top: 8px;
-    left: 8px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
