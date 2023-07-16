@@ -788,6 +788,7 @@ img {
 .modal-btn:focus {
     background-color: var(--active-link-cl);
     border: none;
+    fill: var(--main-background-cl)
 }
 
 .modal-btn:hover .modal-icon {
