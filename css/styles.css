@@ -704,6 +704,11 @@ img {
     transform: translateY(0);
 }
 
+.card-link:hover .overlay,
+.card-link:focus .overlay {
+    transform: translateY(0);
+}
+
 .overlay-text {
     position: absolute;
     top: 0;
