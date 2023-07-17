@@ -699,8 +699,8 @@ img {
     transition: transform 250ms ease-in-out;
 }
 
-.overlay:hover,
-.overlay:focus {
+.overlay-text:hover,
+.overlay-text:focus {
     transform: translateY(0);
 }
 
