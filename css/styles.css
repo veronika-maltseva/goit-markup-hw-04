@@ -792,3 +792,43 @@ img {
     fill: var(--main-background-cl);
 }
 
+
+.modal-form {
+    padding: 72px 24px 24px 24px;
+}
+
+.modal-form-desk {
+    margin-bottom: 16px;
+    width: 360px;
+    height: 24px;
+    text-align: center;
+    color: var(--logo-up-nav-cl);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.modal-form-field {
+    display: block;
+    margin-bottom: 26px;
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+    width: 34px;
+    height: 14px;
+    color: var(--main-grey-cl);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+}
+
+.modal-form-input {}
+
+.modal-form-icon {}
+
+.modal-form-comment {}
